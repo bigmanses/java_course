@@ -3,18 +3,14 @@ public class Lesson2_1 {
         return (a & b & !c & !d) || (a & c & !b & !d) || (a & d & !b & !c) || (b & c & !a & !d) || (b & d & !a & !c) || (c & d & !a & !b);
     }
     public static int leapYearCount(int year) {
-        int a = 0;
-        a = year/4 - year/100 + year/400;
-        return a;
+        return year/4 - year/100 + year/400;
     }
     public static boolean doubleExpression(double a, double b, double c) {
         double E = 0.0001;
         return Math.abs(c-(a+b)) < E;
     }
     public static int flipBit(int value, int bitIndex) {
-        int a = 2;
-        a = (int) Math.pow(a, (bitIndex-1));
-        return value^a ;// put your implementation here
+        return (int) Math.pow(2, (bitIndex-1));
     }
     public static void main(String[] args) {
         System.out.println(booleanExpression(true, true, false, false)); //1

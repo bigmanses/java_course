@@ -52,7 +52,7 @@ public class Lesson2_4 {
                     new_text.append("\n");
                 }
             }
-           // new_text.append("\n");
+            new_text.append("\n");
         }
         String final_text = new_text.toString();
         return final_text;

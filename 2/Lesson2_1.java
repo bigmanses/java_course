@@ -10,13 +10,13 @@ public class Lesson2_1 {
         return Math.abs(c-(a+b)) < E;
     }
     public static int flipBit(int value, int bitIndex) {
-        return (int) Math.pow(2, (bitIndex-1));
+        return value^(1<<(bitIndex-1));
     }
     public static void main(String[] args) {
         System.out.println(booleanExpression(true, true, false, false)); //1
         System.out.println(leapYearCount(400));  //2
         System.out.println(doubleExpression(0.1,0.2, 0.3));  //3
-        System.out.println(flipBit(0,1));  //4
+        System.out.println(flipBit(5,6));  //4
 
     }
 }

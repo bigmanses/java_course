@@ -32,21 +32,23 @@ public class Lesson4_3 {
         }
 
     private static void configureLogging() {
-        final Logger LOGGER_1 = Logger.getLogger(A.class.getName());
-        final Logger LOGGER_2 = Logger.getLogger(B.class.getName());
-        final Logger LOGGER_3 = Logger.getLogger(Lesson4_3.class.getName());
-        LOGGER_1.setLevel(Level.ALL);
-        LOGGER_2.setLevel(Level.FINEST);;
-        Handler handler_1 = new ConsoleHandler(), handler_2 = new ConsoleHandler();
-        handler_1.setLevel(Level.ALL);
 
-        Formatter formatter = new XMLFormatter();
-        handler_1.setFormatter(formatter);
-        handler_2.setFormatter(formatter);
-        LOGGER_1.addHandler(handler_1);
-        LOGGER_2.addHandler(handler_2);
+            final Logger LOGGER_1 = Logger.getLogger(A.class.getName());
+            LOGGER_1.setLevel(Level.ALL);
+            final Logger LOGGER_2 = Logger.getLogger(B.class.getName());
+            LOGGER_2.setLevel(Level.WARNING);
+           // final Logger LOGGER_3 = Logger.getLogger(java.class.getName());
+           // LOGGER_3.setUseParentHandlers(false);
+            Handler handler_1 = new ConsoleHandler();
+            handler_1.setLevel(Level.ALL);
+            Formatter formatter = new XMLFormatter();
+            handler_1.setFormatter(formatter);
+           // LOGGER_3.addHandler(handler_1);
+
+
+        }
+
 
     }
 
-}
 

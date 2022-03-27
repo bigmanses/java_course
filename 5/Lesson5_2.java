@@ -14,7 +14,6 @@ public class Lesson5_2 {
     }
     public static void main(String[] args) throws IOException {
         InputStream inputStream = new ByteArrayInputStream(new byte[] {48, 49, 50, 51});
-       // Writer writer = new OutputStreamWriter(System.out, StandardCharsets.US_ASCII);
         System.out.println(readAsString(inputStream, StandardCharsets.US_ASCII));
 
     }

@@ -12,7 +12,6 @@ public class Lesson5_1b {
             if(pred != 13 || next != 10)
                 System.out.write(pred);
             pred = next;
-
         }
 
     }

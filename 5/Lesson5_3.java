@@ -45,7 +45,6 @@ public class Lesson5_3 {
             Animal [] animals = new Animal[size];
             for (int i = 0; i < size; i++) {
                 animals[i] = (Animal) obj.readObject();
-                //System.out.println(animals[i].getname());
             }
             obj.close();
             return animals;

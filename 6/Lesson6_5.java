@@ -7,6 +7,5 @@ public class Lesson6_5 {
     }
     public static void main(String[] args){
         pseudoRandomStream(13).limit(10).forEach(System.out::println);
-        System.out.println(525/10%1000);
     }
 }
